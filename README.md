@@ -1,5 +1,7 @@
 # MQTT Service on Fly.io
 
+
+
 This repository contains the configuration files and setup for deploying an MQTT service on Fly.io. MQTT is a lightweight messaging protocol widely used in IoT and real-time communication scenarios.
 
 ## Overview
@@ -46,8 +48,10 @@ In this project, we leverage the Fly.io platform to deploy an MQTT broker using 
 
 6. Testing MQTT Connectivity
 	- Use an MQTT client, like `mosquitto_pub` and `mosquitto_sub`, to test the connectivity to your MQTT service. Replace `<your-hostname>` with your actual hostname or IP address.
-	 `mosquitto_sub -t 'test/topic' -u $MQTT_USERNAME -P $MQTT_PASSWORD -h <your-hostname> -d`
-	 `mosquitto_pub -t 'test/topic' -m 'helloWorld' -u $MQTT_USERNAME -P $MQTT_PASSWORD -h <your-hostname> -d`
+	 ```bash
+     mosquitto_sub -t 'test/topic' -u $MQTT_USERNAME -P $MQTT_PASSWORD -h <your-hostname> -d
+	 mosquitto_pub -t 'test/topic' -m 'helloWorld' -u $MQTT_USERNAME -P $MQTT_PASSWORD -h <your-hostname> -d
+     ```
 
 2.  Enjoy Your MQTT Service
     - Your MQTT service is now accessible and ready for use in your applications, devices, or IoT projects.
