@@ -1,0 +1,18 @@
+# fly.toml app configuration file generated for mqtt-acidobinario on 2023-10-11T02:27:39-03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "mqtt-acidobinario"
+primary_region = "scl"
+
+[build]
+
+[[services]]
+  internal_port = 1883
+  protcol = "tcp"
+  processes = ["app"]
+
+  [[services.ports]]
+    port = 1883
+    handlers = [ ]
